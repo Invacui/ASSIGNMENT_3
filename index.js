@@ -9,7 +9,7 @@ const resultElement = document.getElementById('lr');
             if (buttonText === 'DEL') {
                 currentInput = currentInput.slice(0, -1); // Remove the last character
             } else if (buttonText === 'RESET') {
-                currentInput = ' ';
+                currentInput = '0';
             } else if (buttonText === '=') {
                 try {
                     currentInput = eval(currentInput).toString();
@@ -21,5 +21,13 @@ const resultElement = document.getElementById('lr');
             }
 
             resultElement.textContent = currentInput;
+
+            // Set opacity based on currentInput value
+            if (currentInput === '' || currentInput === '0') {
+                resultElement.style.opacity = '0.5';
+            } else {
+                resultElement.style.opacity = '1';
+            }
+
         });
     });

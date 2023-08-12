@@ -51,6 +51,7 @@ body{
     
 }
 #secondbox p{
+opacity: 0.5;
 color: #FFF;
 font-family: Segoe UI;
 font-size: 7vh;
