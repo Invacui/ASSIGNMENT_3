@@ -14,7 +14,7 @@ body{
 .calboxmain{
     display: flex;
     flex-direction:column;
-    border:1px solid rgba(0, 255, 13, 0.708);
+    /* border:1px solid rgba(0, 255, 13, 0.708); */
     justify-content:space-around;
     align-items: stretch;
     height: 60vh;
@@ -37,10 +37,11 @@ body{
     color: #FFF;
     font-family: Inter;
     margin: 0;
-    border: 1px solid yellow;
+   /* border: 1px solid yellow;*/
 }
 #secondbox{
     box-shadow:  -1px 2px 2px 2px #07070736;
+    background: #181F32;
     display: flex;
     height:20%;
     flex-direction: row;
@@ -56,17 +57,23 @@ font-size: 7vh;
 font-weight: 700;
 padding: 1vh;
 margin: 0;
-border: 1px solid yellow;
+/* border: 1px solid yellow; */
 }
-#thirdbox{
+#outerb{
     display: flex;
+    /* border: 1px solid white; */
     background-color: var(--nobox);
-    flex-direction:row ;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
+    
     flex-grow:24;
-    padding: 5%;    
+    padding: 1%;    
+}
+#outerb #thirdbox{
+    /* border: 1px solid red; */
+    margin: 4%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2%;    
 }
 #thirdbox button{
     cursor: pointer;
@@ -74,9 +81,10 @@ border: 1px solid yellow;
     font-size: 3vh;
     height: 5vh;
     width: 100%;
+    margin:  0.1px;
     font-weight: bolder;
     color: var(--bgcolor);
-    flex-basis: calc(25% - 10px);
+    flex-basis: 20%;
     align-items: baseline;
     border:0px;
     border-radius: 0.4rem;
