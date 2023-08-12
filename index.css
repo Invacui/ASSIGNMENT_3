@@ -42,6 +42,7 @@ body{
 #secondbox{
     box-shadow:  -1px 2px 2px 2px #07070736;
     display: flex;
+    height:20%;
     flex-direction: row;
     justify-content: end;
     align-items: center;
